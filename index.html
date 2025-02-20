@@ -35,13 +35,16 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#rooms">Chambres</a>
+                                <a class="nav-link" href="#adress">Nos adresses</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">A Propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="https://api.whatsapp.com/send?phone=+27698089022&text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20services." 
+                                target="_blank" title="Envoyer un message WhatsApp"
+                                onclick="return !window.open(this.href, '','top=50 left=100 width=360 height=570')">
+                                 Contactez-nous</a>
                             </li>
                         </ul>
                     </div>
@@ -68,7 +71,7 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
  <!--End of  Header -->
 
 <!-- About -->
-<div class=about>   
+<div class=about id="about">   
       <h3>A propos de Nous</h3>
       <h6>
         Bienvenue au <b><i>meilleur Hotel de la Ville</i></b>, un lieu d’exception où confort et élégance se rencontrent pour offrir une expérience inoubliable. Situé au cœur de [Ville ou Région], notre hôtel vous invite à découvrir un cadre raffiné, un service chaleureux et des prestations haut de gamme adaptées à tous vos besoins.
@@ -99,7 +102,7 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <button type="button" id="Chambrebt"> Nos Merveilleuses et Luxueuses Chambres ⭐⭐⭐⭐⭐:</button>
 
 <!-- Rooms -->
- <div class="Grid">
+ <div class="Grid" id="rooms">
     <div class="card">
       <img src="images/room1.avif" alt="Norway" style="width:100%">
       <div class="w3-container w3-white">
@@ -108,7 +111,8 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>Single lit</p>
         <p>15m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Contactez-nous pour boocker</button>
+        <a class="nav-link" href="https://api.whatsapp.com/send?phone=+27698089022&text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20services%20et%20je%20boock%20pour%20la%20chambre%201%20au%20prix%20de%20$99%20/%20jour." target="_blank" title="Envoyer un message WhatsApp" onclick="return !window.open(this.href, '','top=50 left=100 width=360 height=570')"><button class="w3-button w3-block w3-black w3-margin-bottom">Boocker Maintenant</button></a>
+        
       </div>
     </div>
     <div class="card">
@@ -119,7 +123,7 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>Lux</p>
         <p>15m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Contactez-nous pour boocker</button>
+        <a class="nav-link" href="https://api.whatsapp.com/send?phone=+27698089022&text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20services%20et%20je%20boock%20pour%202a%20chambre%202%20au%20prix%20de%20$200%20/%20jour." target="_blank" title="Envoyer un message WhatsApp" onclick="return !window.open(this.href, '','top=50 left=100 width=360 height=570')"><button class="w3-button w3-block w3-black w3-margin-bottom">Boocker Maintenant</button></a>
       </div>
     </div>
     <div class="card">
@@ -130,7 +134,7 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>Lux</p>
         <p>15m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Contactez-nous pour boocker</button>
+        <a class="nav-link" href="https://api.whatsapp.com/send?phone=+27698089022&text=Bonjour,%20je%20suis%20intéressé%20par%20vos%20services%20et%20je%20boock%20pour%20la%20chambre%203%20au%20prix%20de%20$260%20/%20jour." target="_blank" title="Envoyer un message WhatsApp" onclick="return !window.open(this.href, '','top=50 left=100 width=360 height=570')"><button class="w3-button w3-block w3-black w3-margin-bottom">Boocker Maintenant</button></a>
       </div>
     </div>
 </div>
@@ -156,9 +160,9 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
   </div>
   
   <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
+    <div class="w3-half w3-margin-bottom" id="sticky">
       <div class="w3-display-container">
-        <img src="images/hot1.jpg" alt="Cinque Terre" style="width:100%">
+        <img src="images/hot1.jpg" alt="Cinque Terre" style="width:100%" >
         <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
       </div>
     </div>
@@ -212,6 +216,24 @@ body {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Script pour faire un scrol smooth -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Ajuste selon la hauteur du menu
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
